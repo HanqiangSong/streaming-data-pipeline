@@ -30,12 +30,12 @@ def fetch_price(producer, symbol):
     producer.send(topic=topic, value=price, timestamp_ms=time.time())
     logger.debug('sent stock price for %s, price is %s' % (symbol, price))
 
+
 def shut_down(producer):
     logger.debug('exit program')
     producer.flush(10)
     producer.close()
     logger.debug('kafka producer closed')
-
 
 
 if __name__ == '__main__':
@@ -62,4 +62,4 @@ if __name__ == '__main__':
 
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(2)
