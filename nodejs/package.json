@@ -1,0 +1,20 @@
+{
+  "name": "stock-dashboard",
+  "version": "1.0.0",
+  "description": "dashboard of stock price",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hanqiangsong",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "jquery": "^3.2.1",
+    "minimist": "^1.2.0",
+    "redis": "^2.8.0",
+    "smoothie": "^1.32.0",
+    "socket.io": "^2.0.3"
+  }
+}
